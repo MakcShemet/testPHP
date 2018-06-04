@@ -39,14 +39,14 @@ echo "<br />";
 
 $num = $_POST['num'];
 
-echo "<div class='row'><div class='col-md-3'><b>Вывод чисел до $num : </b></div><br />";
+echo "<div class='container'><div class='col-md-3'><b>Вывод чисел до $num : </b></div><br />";
 
  for ($i=0; $i < $num; $i++) { 
 	
 	echo "<span>$i</span> ";
 };
 
-$result = mysqli_query("INSERT INTO result (numb) VALUES ($num)");
+$result = mysqli_query("INSERT INTO result (numb, resultcount) VALUES ($num, $i)");
 
 if ($result) {
     echo "<p>Данные успешно сохранены!</p>";
