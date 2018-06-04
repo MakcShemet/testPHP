@@ -19,7 +19,7 @@ echo '<!DOCTYPE html>
 
 <body>
 <header class="text-center md-35">
-	<h1 class="">Форма для вывода простых чисел</h1>
+	<h1 class="">Форма для вывода простых чисел до вводимого значения</h1><br />
 </header>
 
 <div class="container">
